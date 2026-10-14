@@ -10,7 +10,7 @@ from rest_framework import exceptions, HTTP_HEADER_ENCODING
 
 from social_django.views import NAMESPACE
 from social_django.utils import load_backend, load_strategy
-from social_core.exceptions import MissingBackend
+from .compat import MissingBackend
 from social_core.utils import requests
 
 from .settings import DRFSO2_URL_NAMESPACE

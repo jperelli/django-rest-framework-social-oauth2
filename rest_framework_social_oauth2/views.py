@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from oauthlib.oauth2.rfc6749.endpoints.token import TokenEndpoint
-from social_core.exceptions import MissingBackend
+from .compat import MissingBackend
 from social_django.utils import load_strategy, load_backend
 from social_django.views import NAMESPACE
 
